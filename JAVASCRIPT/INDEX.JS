@@ -1,0 +1,1 @@
+const myModal = plaginObj.modal();

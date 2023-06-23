@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 24px;
+  background-color: rgb(174, 174, 174);
+  padding: 0.5%;
+}
+
+.more-info {
+  text-decoration: none;
+  font-size: 29px;
+  color: rgb(66, 64, 64);
+  padding: 0 1% 0 0;
+}
+
+.hello-content {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+.hello-content:hover {
+  font-size: 28px;
+  color: rgb(66, 64, 64);
+}
+
+.hello-content:active {
+  font-size: 29px;
+  color: black;
+}
+
+.hello-content:active {
+  color: black;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.content .card {
+  margin: 4% 1%;
+  border-left: 4px double rgb(29, 169, 55);
+  border-right: 4px double rgb(29, 169, 55);
+  padding: 0 4% 1% 4%;
+  display: flex;
+  flex-direction: column;
+}
+.content .card tt {
+  font-size: 45px;
+}
+.content .card .header {
+  font-size: 28px;
+  text-align: center;
+  background-color: rgb(174, 174, 174);
+  width: 99%;
+}
+.content .card img {
+  width: 100%;
+}
+.content .card .text {
+  margin: 4% 1%;
+  border-left: 1px solid silver;
+  margin: 2% 1%;
+  padding: 0 2%;
+}
+.content .card button {
+  background-color: #fff;
+  border: 1px solid rgb(29, 169, 55);
+  border-radius: 25px;
+  padding: 1%;
+  text-align: center;
+  width: 24%;
+  align-self: flex-end;
+}
+.content .card button:hover {
+  background-color: rgb(128, 200, 84);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: silver;
+}
+.footer img {
+  width: 150px;
+  height: 60px;
+  padding: 1%;
+}
+.footer .vk {
+  width: 50px;
+  height: 50px;
+  padding: 1% 1% 1% 1.1%;
+}
+
+.main-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.main-modal .modal-window {
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.main-modal .modal-window .header {
+  display: flex;
+  justify-content: space-between;
+}
+.main-modal .modal-window .header button {
+  background-color: #fff;
+  border: 1px solid rgb(29, 169, 55);
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  align-self: center;
+  margin: 0 1% 0 0;
+}
+.main-modal .modal-window .header button:hover {
+  background-color: rgb(128, 200, 84);
+  cursor: pointer;
+}
+.main-modal .modal-window .content-modal {
+  display: flex;
+  flex-direction: column;
+}
+.main-modal .modal-window .content-modal .img-content-modal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.main-modal .modal-window .content-modal img {
+  margin: 1%;
+  width: 98%;
+  border-radius: 24px;
+}
+.main-modal .modal-window .content-modal hr {
+  height: 1px;
+  border: none;
+  background-color: rgb(29, 169, 55);
+  width: 75%;
+  align-self: center;
+  margin: 2% 0 2% 0;
+}
+.main-modal .modal-window .content-modal p {
+  margin: 1% 4% 1% 4%;
+  border-left: 1px solid silver;
+  padding: 0 0 0 1%;
+}
+.main-modal .modal-window .footer {
+  background-color: silver;
+  font-size: 23px;
+}
+.main-modal .modal-window .footer a {
+  text-decoration: none;
+  color: black;
+}
+.main-modal .modal-window .footer a:hover {
+  color: rgb(29, 169, 55);
+}
+.main-modal .modal-window .footer a:active {
+  color: #fff;
+}
+
+.main-modal.open {
+  opacity: 1;
+  z-index: 1000;
+}
+
+@media (min-width: 500px) {
+  .card {
+    padding: 0 5% 1% 5%;
+  }
+}/*# sourceMappingURL=MOREINFO.css.map */

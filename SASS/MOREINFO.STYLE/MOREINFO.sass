@@ -1,0 +1,152 @@
+$mainColor: rgb(29, 169, 55)
+$mainColorLight: rgb(128, 200, 84)
+$great: rgb(66, 64, 64)
+$ligthGreate: rgb(174, 174, 174)
+
+*
+    margin: 0
+    padding: 0
+
+.header
+    font-size: 24px
+    background-color: $ligthGreate
+    padding: .5%
+.more-info
+    text-decoration: none
+    font-size: 29px
+    color: $great
+    padding: 0 1% 0 0
+.hello-content
+    text-decoration: none
+    font-size: 24px
+    color: white
+.hello-content:hover
+    font-size: 28px
+    color: $great
+.hello-content:active
+    font-size: 29px
+    color: black
+.hello-content:active
+    color: black
+.content
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
+    .card
+        margin: 4% 1%
+        border-left: 4px double $mainColor
+        border-right: 4px double $mainColor
+        padding: 0 4% 1% 4%
+        display: flex
+        flex-direction: column
+        tt
+            font-size: 45px
+
+        .header
+            font-size: 28px
+            text-align: center
+            background-color: $ligthGreate
+            width: 99%
+        img
+            width: 100%
+        .text
+            margin: 4% 1% 
+            border-left: 1px solid silver
+            margin: 2% 1%
+            padding: 0 2%
+        button
+            background-color: #fff
+            border: 1px solid $mainColor
+            border-radius: 25px
+            padding: 1%
+            text-align: center
+            width: 24%
+            align-self: flex-end
+
+            
+        button:hover
+            background-color: $mainColorLight
+            cursor: pointer
+.footer
+    background-color: silver
+    img
+        width: 150px
+        height: 60px
+        padding: 1%
+    .vk 
+        width: 50px
+        height: 50px
+        padding: 1% 1% 1% 1.1%
+.main-modal
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0,.5)
+    opacity: 0
+    z-index: -1
+    display: flex
+    justify-content: center
+    .modal-window
+        background-color: #fff
+        width: 90%
+        height: 90%
+        display: flex
+        flex-direction: column
+        align-self: center
+        .header
+            display: flex
+            justify-content: space-between
+            button
+                background-color: #fff
+                border: 1px solid $mainColor
+                width: 21px
+                height: 21px
+                text-align: center
+                align-self: center
+                margin: 0 1% 0 0 
+            button:hover
+                background-color: $mainColorLight
+                cursor: pointer
+        .content-modal
+            display: flex
+            flex-direction: column
+            .img-content-modal
+                display: grid
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+            img
+                margin: 1%
+                width: 98%
+                border-radius: 24px
+            hr
+                height: 1px
+                border: none
+                background-color: $mainColor
+                width: 75%
+                align-self: center
+                margin: 2% 0 2% 0
+            p
+                margin: 1% 4% 1% 4%
+                border-left: 1px solid silver
+                padding: 0 0 0 1%    
+        .footer
+            background-color: silver
+            font-size: 23px
+            a
+                text-decoration: none
+                color: black
+            a:hover
+                color: $mainColor
+            a:active 
+                color: #fff
+.main-modal.open
+        opacity: 1
+        z-index: 1000
+
+@media ( min-width: 500px)
+    .card 
+        padding: 0 5% 1% 5%
+        
+    
+
+        

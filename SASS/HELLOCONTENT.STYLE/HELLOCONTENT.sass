@@ -1,0 +1,99 @@
+$mainColor: rgb(29, 169, 55)
+$great: rgb(66, 64, 64)
+$ligthGreate: rgb(174, 174, 174)
+*
+    margin: 0
+    padding: 0
+
+.header
+    font-size: 24px
+    background-color: $ligthGreate
+    padding: 1% 
+
+
+
+    .hello-content
+        text-decoration: none
+        font-size: 29px
+        color: $great
+        padding: 0 1% 0 0
+    .more-info
+        text-decoration: none
+        font-size: 24px
+        color: white
+    .more-info:hover
+        font-size: 28px
+        color: $great
+    .hello-content:active
+        font-size: 29px
+        color: black
+    .more-info:active
+        color: black
+
+    
+.hello
+    display: flex
+    flex-direction: column
+    .main-img
+
+    p
+        color: white
+    hr
+        margin: 4% 10% 4%
+        height: 4px
+        background-color: $mainColor
+        border: none
+.write
+    padding: 0 10% 0
+.content
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: minMax(100px auto)
+    div
+        border: 1px solid $mainColor
+        margin: 4% 
+
+        tt
+            font-size: 25px
+            padding: 1%
+        p
+            text-align: center
+            padding: 4%
+        .header-in-content
+            font-size: 30px
+.footer
+    background-color: silver
+    min-height: 100px
+    img
+        width: 150px
+        height: 60px
+        padding: 1%
+    .vk 
+        width: 50px
+        height: 50px
+        padding: 1% 1% 1% 1.1%
+.main-conteiner
+    height: 85%
+@media ( min-width: 800px )
+    .header-in-content
+        font-size: 30px
+    .content
+        p
+            font-size: 40px
+    .header
+        padding: 0.5%       
+
+@media (min-width: 1200px)
+    .header-in-content
+        font-size: 40px
+        p
+            font-size: 40px
+@media ( max-width: 900px )
+    .content
+        div
+            grid-column: 1/3
+    
+
+
+            
+

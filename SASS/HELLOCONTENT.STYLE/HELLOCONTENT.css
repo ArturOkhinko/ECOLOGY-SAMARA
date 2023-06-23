@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 24px;
+  background-color: rgb(174, 174, 174);
+  padding: 1%;
+}
+.header .hello-content {
+  text-decoration: none;
+  font-size: 29px;
+  color: rgb(66, 64, 64);
+  padding: 0 1% 0 0;
+}
+.header .more-info {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+.header .more-info:hover {
+  font-size: 28px;
+  color: rgb(66, 64, 64);
+}
+.header .hello-content:active {
+  font-size: 29px;
+  color: black;
+}
+.header .more-info:active {
+  color: black;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+}
+.hello p {
+  color: white;
+}
+.hello hr {
+  margin: 4% 10% 4%;
+  height: 4px;
+  background-color: rgb(29, 169, 55);
+  border: none;
+}
+
+.write {
+  padding: 0 10% 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minMax(100px auto);
+}
+.content div {
+  border: 1px solid rgb(29, 169, 55);
+  margin: 4%;
+}
+.content div tt {
+  font-size: 25px;
+  padding: 1%;
+}
+.content div p {
+  text-align: center;
+  padding: 4%;
+}
+.content div .header-in-content {
+  font-size: 30px;
+}
+
+.footer {
+  background-color: silver;
+  min-height: 100px;
+}
+.footer img {
+  width: 150px;
+  height: 60px;
+  padding: 1%;
+}
+.footer .vk {
+  width: 50px;
+  height: 50px;
+  padding: 1% 1% 1% 1.1%;
+}
+
+.main-conteiner {
+  height: 85%;
+}
+
+@media (min-width: 800px) {
+  .header-in-content {
+    font-size: 30px;
+  }
+  .content p {
+    font-size: 40px;
+  }
+  .header {
+    padding: 0.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .header-in-content {
+    font-size: 40px;
+  }
+  .header-in-content p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content div {
+    grid-column: 1/3;
+  }
+}/*# sourceMappingURL=HELLOCONTENT.css.map */
