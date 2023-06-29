@@ -7,9 +7,9 @@ const createCard = (array) => {
             <tt>${element.number}</tt>
           </i>
           <div class="header">${element.header}</div>
-          <img src=${element.mainimg} />
-          <div class="text">ADRESS: ${element.adress}<br>
-          TimeOfWorke: ${element.timeOfWorke}</div>
+          <img src=${element.img.mainimg} />
+          <div class="text">${element.address}<br>
+          ${element.timeOfWorke}</div>
           <button class="more-info-btn-open" data-number="${element.id}" data-open="true">
             MORE INFO
           </button>
