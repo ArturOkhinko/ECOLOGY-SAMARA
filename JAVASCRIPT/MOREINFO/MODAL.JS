@@ -11,17 +11,27 @@ plaginObj.modal = function (options) {
     open() {
       modalWindow.classList.add("open");
       modalWindowForObj();
-      const footer = document.querySelector(".footer-modal");
       const contactObj = arrayForCardFilter[0].contact;
       console.log(contactObj);
-      for (let key in contactObj) {
-        if (contactObj[key]) {
-          footer.insertAdjacentHTML(
-            "afterbegin",
-            `<div class="contact">${contactObj[key]}</div>`
-          );
-        }
+      function addContact(contact) {
+        const footer = document.querySelector(".footer-modal");
+        const HTMLContact = (contact) => {
+          if (contact === contactObj.telephone || contact === contactObj.mail) {
+            return `<div class="contact">${contact}</div>`;
+          }
+          if (contact === contactObj.telegram) {
+            return `<a href="${contact}" class="contact">Telegram</a>`;
+          }
+          if (contact === contactObj.site) {
+            return `<a href="${contact}" class="contact">Site</a>`;
+          }
+        };
+        footer.insertAdjacentHTML("afterbegin", HTMLContact(contact));
       }
+      contactObj.telephone ? addContact(contactObj.telephone) : null;
+      contactObj.mail ? addContact(contactObj.mail) : null;
+      contactObj.telegram ? addContact(contactObj.telegram) : null;
+      contactObj.site ? addContact(contactObj.site) : null;
       const address = arrayForCardFilter[0].address;
       footer.insertAdjacentHTML(
         "afterbegin",
@@ -101,6 +111,7 @@ function modalWindowForObj() {
     divButton.append(button);
     button.append(">");
   }
+
   if (window.innerWidth > 700) {
     const content = document.querySelector(".img-content-modal");
     const photo = document.createElement("img");

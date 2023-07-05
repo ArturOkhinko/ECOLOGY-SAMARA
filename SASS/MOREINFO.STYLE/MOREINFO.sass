@@ -41,17 +41,16 @@ $ligthGreate: rgb(174, 174, 174)
         tt
             font-size: 45px
 
-        .header
+        .header-card
             font-size: 28px
             text-align: center
             background-color: $ligthGreate
-            width: 99%
+            width: 100%
         img
             width: 100%
         .text
             margin: 4% 1% 
             border-left: 1px solid silver
-            margin: 2% 1%
             padding: 0 2%
         button
             background-color: #fff
@@ -148,6 +147,10 @@ $ligthGreate: rgb(174, 174, 174)
             display: grid
             grid-template-columns: 1fr 1fr
             padding: 1%
+            .contact
+                text-align: center
+                margin: 24px 24px 4px 24px
+            
             .footer-info
                 margin: 0 0 4% 0
 
@@ -164,7 +167,18 @@ $ligthGreate: rgb(174, 174, 174)
 @media ( min-width: 500px)
     .card 
         padding: 0 5% 1% 5%
-        
+@media (max-width: 480px) 
+        .footer-modal
+            .contact
+                font-size: 16px
+        .content
+            .text
+                font-size: 10px        
+@media (max-width: 400px) 
+    .card
+        img
+            max-width: 400px   
+    .header 
+        min-width: 400px 
     
-
         

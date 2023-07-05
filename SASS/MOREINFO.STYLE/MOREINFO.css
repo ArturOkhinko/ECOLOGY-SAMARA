@@ -51,11 +51,11 @@
 .content .card tt {
   font-size: 45px;
 }
-.content .card .header {
+.content .card .header-card {
   font-size: 28px;
   text-align: center;
   background-color: rgb(174, 174, 174);
-  width: 99%;
+  width: 100%;
 }
 .content .card img {
   width: 100%;
@@ -63,7 +63,6 @@
 .content .card .text {
   margin: 4% 1%;
   border-left: 1px solid silver;
-  margin: 2% 1%;
   padding: 0 2%;
 }
 .content .card button {
@@ -180,6 +179,10 @@
   grid-template-columns: 1fr 1fr;
   padding: 1%;
 }
+.main-modal .modal-window .footer-modal .contact {
+  text-align: center;
+  margin: 24px 24px 4px 24px;
+}
 .main-modal .modal-window .footer-modal .footer-info {
   margin: 0 0 4% 0;
 }
@@ -202,5 +205,21 @@
 @media (min-width: 500px) {
   .card {
     padding: 0 5% 1% 5%;
+  }
+}
+@media (max-width: 480px) {
+  .footer-modal .contact {
+    font-size: 16px;
+  }
+  .content .text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .card img {
+    max-width: 400px;
+  }
+  .header {
+    min-width: 400px;
   }
 }/*# sourceMappingURL=MOREINFO.css.map */

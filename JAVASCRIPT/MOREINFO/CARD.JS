@@ -6,7 +6,7 @@ const createCard = (array) => {
           <i>
             <tt>${element.number}</tt>
           </i>
-          <div class="header">${element.header}</div>
+          <div class="header-card">${element.header}</div>
           <img src=${element.img.mainimg} />
           <div class="text">${element.address}<br>
           ${element.timeOfWorke}</div>
