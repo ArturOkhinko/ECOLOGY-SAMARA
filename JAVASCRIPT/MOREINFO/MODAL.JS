@@ -13,8 +13,8 @@ plaginObj.modal = function (options) {
       modalWindowForObj();
       const contactObj = arrayForCardFilter[0].contact;
       console.log(contactObj);
+      const footer = document.querySelector(".footer-modal");
       function addContact(contact) {
-        const footer = document.querySelector(".footer-modal");
         const HTMLContact = (contact) => {
           if (contact === contactObj.telephone || contact === contactObj.mail) {
             return `<div class="contact">${contact}</div>`;
